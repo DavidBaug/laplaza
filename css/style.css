@@ -1716,10 +1716,13 @@ h1 {
   font-size: 36px; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  color: #0f3b60;
+  }
 
 h3 {
-  font-size: 24px; }
+  font-size: 20px;
+  }
 
 h4 {
   font-size: 18px; }
@@ -3351,7 +3354,7 @@ h6 {
 /*============== footer-area css ===============*/
 .footer-area {
   padding-top: 115px;
-  background: cornflowerblue;
+  background: black;
   }
   @media (max-width: 991px) {
     .footer-area {
@@ -3360,13 +3363,13 @@ h6 {
     .footer-area .single-footer-widget {
       margin-bottom: 30px; } }
   .footer-area .single-footer-widget p {
-    color: black;
+    color: #b9d8eb;
     }
   .footer-area .single-footer-widget h4 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 25px;
-    color: #444444;
+    color: #B9D8E6;
     }
     @media (max-width: 1024px) {
       .footer-area .single-footer-widget h4 {
@@ -3435,7 +3438,9 @@ h6 {
       box-shadow: none; }
   .footer-area .footer-address span {
     display: block;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    color: #3b8ab5;
+    }
   .footer-area .footer-logo {
     margin-top: 28px;
     display: inline-block; }
@@ -3498,3 +3503,84 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+.seccion_principal{
+    margin: 5% 15% 1%;
+}
+
+
+.seccion_principal .titulo{}
+
+.evento{
+    display: flex;
+    width: -webkit-fill-available;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.evento .tribe-events-event-image{
+    padding: 5%;
+    float: left;
+}
+
+.evento .row{}
+
+.evento .column{
+    padding: 0%;
+    margin: auto;
+    padding-left: 2%;
+}
+
+.evento .tribe-event-schedule-details{
+    color: black;
+    padding-top: 4%;
+    font-size: 16px;
+}
+
+.evento img{
+    width: 270px;
+    height: 180px;
+}
+
+.evento .tribe-event-date-start{}
+
+.evento .tribe-event-date-end{}
+
+.evento .tribe-events-list-event-title{
+    font-size: 28px;
+}
+
+.evento .organizer{
+    font-size: 22px;
+}
+
+.evento .area_and_organiza{}
+
+.evento .event-venue{
+    color: black;
+}
+
+.evento .tribe-events-event-meta{
+    color: black;
+}
+
+.evento .coste{
+    color: black;
+    font-size: 16px;
+}
+
+.evento .tribe-event-url{
+    color: #0f3b60;
+}
+
+.evento .tribe-event-url:hover{
+    color: #005e93;
+}
+
+.evento a{
+  color: #00669f;
+}
+
+.evento a:hover{
+  color: #f84b67;
+}
