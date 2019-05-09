@@ -81,6 +81,7 @@ button:focus {
 .mt-25 {
   margin-top: 25px; }
 
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px; } }
@@ -128,7 +129,7 @@ ul {
   z-index: 99;
   transition: background 0.4s, all 0.3s linear; }
   .header_area .navbar {
-    background: transparent;
+    background: #254a65;
     padding: 0px;
     border: 0px;
     border-radius: 0px;
@@ -248,7 +249,7 @@ ul {
     list-style: none; }
     .right-button ul li {
       display: inline-block;
-      margin-left: 25px;
+      margin-left: 5px;
       font-size: 16px;
       }
       .right-button ul li a {
@@ -3505,7 +3506,8 @@ h6 {
 /*# sourceMappingURL=style.css.map */
 
 .seccion_principal{
-    margin: 5% 15% 1%;
+    margin: 0% 10%;
+    padding-top: 90px;
 }
 
 
@@ -3583,4 +3585,119 @@ h6 {
 
 .evento a:hover{
   color: #f84b67;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+/* Set a style for all buttons */
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #222222;
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar {
+    width: 200px;
+	height:200px;
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+	padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.searchContainer {
+  display: flex;
+  flex: 1 1 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 8% 0%;
+}
+
+.searchIcon {
+  padding: 0.5rem;
+  padding-top: 13px;
+  background: white;
+  color: #6e96b0;
+}
+
+.searchBox {
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  flex: 1;
+  width: 150px;
+}
+
+.searchButton {
+  background: #6e96b0;
+  border: 0;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0;
 }

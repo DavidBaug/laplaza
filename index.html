@@ -43,12 +43,68 @@
                                 </ul>
                             </li> -->
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                            <li>
+                              <div class="searchContainer">
+                                <i class="fa fa-search searchIcon"></i>
+                                <input class="searchBox" type="search" name="search" placeholder="Search...">
+                                <input type="submit" value="Search" class="searchButton">
+                              </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="right-button">
                         <ul>
-                            <li><a class="sign_up" href="">Acceder</a></li>
-                            <li><a class="sign_up" href="">Registrarse</a></li>
+
+                            <li>
+                              <button onclick="document.getElementById('modal-wrapper').style.display='block'">
+                              Acceder</button>
+
+                              <div id="modal-wrapper" class="modal">
+
+                                <form class="modal-content animate" action="index2.html">
+
+                                  <div class="imgcontainer">
+                                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                                    <h1 style="text-align:center; color:black;">Acceso</h1>
+                                  </div>
+
+                                  <div class="container">
+                                    <input type="text" placeholder="Nombre de usuario" name="uname">
+                                    <input type="password" placeholder="Contraseña" name="psw">
+                                    <button type="submit" style="background: #b6d5e9;width: -webkit-fill-available;margin: 1% 40%;">Acceder</button>
+                                    <a href="#" style="text-decoration: none;color: black;width: -webkit-fill-available;text-align: center;position: relative;left: 250px;top: 10px;">¿Has olvidado tu contraseña?</a>
+                                  </div>
+
+                                </form>
+                              </div>
+                            </li>
+                            <li>
+                              <button onclick="document.getElementById('modal-wrapper').style.display='block'">
+                              Registrarse</button>
+
+                              <div id="modal-wrapper" class="modal">
+
+                                <form class="modal-content animate" action="index2.html">
+
+                                  <div class="imgcontainer">
+                                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                                    <h1 style="text-align:center; color:black;">Registro</h1>
+                                  </div>
+
+                                  <div class="container">
+                                    <input type="text" placeholder="Nombre de usuario" name="uname">
+                                    <input type="password" placeholder="Contraseña" name="psw">
+                                    <input type="password" placeholder="Confirma la Contraseña" name="psw2">
+                                    <input type="text" placeholder="Correo electrónico" name="mail">
+                                    <button type="submit" style="background: #b6d5e9;width: -webkit-fill-available;margin: 1% 40%;">Registrar</button>
+                                  </div>
+
+                                </form>
+
+                              </div>
+
+                            </li>
+
                         </ul>
                     </div>
                 </div>
