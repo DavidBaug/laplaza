@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Favison SAAS</title>
+    <title>Laplaza</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -42,19 +42,76 @@
                               </ul>
                           </li> -->
                           <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                          <li>
+                            <div class="searchContainer">
+                              <i class="fa fa-search searchIcon"></i>
+                              <input class="searchBox" type="search" name="search" placeholder="Search...">
+                              <input type="submit" value="Search" class="searchButton">
+                            </div>
+                          </li>
                       </ul>
                   </div>
                   <div class="right-button">
                       <ul>
-                          <li><a class="sign_up" href="">Acceder</a></li>
-                          <li><a class="sign_up" href="">Registrarse</a></li>
+
+                          <li>
+                            <button onclick="document.getElementById('modal-wrapper').style.display='block'">
+                            Acceder</button>
+
+                            <div id="modal-wrapper" class="modal">
+
+                              <form class="modal-content animate" action="index2.html">
+
+                                <div class="imgcontainer">
+                                  <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                                  <h1 style="text-align:center; color:black;">Acceso</h1>
+                                </div>
+
+                                <div class="container">
+                                  <input type="text" placeholder="Nombre de usuario" name="uname">
+                                  <input type="password" placeholder="Contraseña" name="psw">
+                                  <button type="submit" style="background: #b6d5e9;width: -webkit-fill-available;margin: 1% 40%;">Acceder</button>
+                                  <a href="#" style="text-decoration: none;color: black;width: -webkit-fill-available;text-align: center;position: relative;left: 250px;top: 10px;">¿Has olvidado tu contraseña?</a>
+                                </div>
+
+                              </form>
+                            </div>
+                          </li>
+                          <li>
+                            <button onclick="document.getElementById('modal-wrapper1').style.display='block'">
+                            Registrarse</button>
+
+                            <div id="modal-wrapper1" class="modal">
+
+                              <form class="modal-content animate" action="index2.html">
+
+                                <div class="imgcontainer">
+                                  <span onclick="document.getElementById('modal-wrapper1').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                                  <h1 style="text-align:center; color:black;">Registro</h1>
+                                </div>
+
+                                <div class="container">
+                                  <input type="text" placeholder="Nombre de usuario" name="uname">
+                                  <input type="password" placeholder="Contraseña" name="psw">
+                                  <input type="password" placeholder="Confirma la Contraseña" name="psw2">
+                                  <input type="text" placeholder="Correo electrónico" name="mail">
+                                  <button type="submit" style="background: #b6d5e9;width: -webkit-fill-available;margin: 1% 40%;">Registrar</button>
+                                </div>
+
+                              </form>
+
+                            </div>
+
+                          </li>
+
                       </ul>
                   </div>
               </div>
           </nav>
       </div>
   </header>
-    <!--================Header Menu Area =================-->
+  <!--================Header Menu Area =================-->
+
 
 
     <!--================Hero Banner Area Start =================-->
@@ -75,11 +132,11 @@
   <!-- ================ contact section start ================= -->
   <section class="contact-section area-padding">
     <div class="container">
-      <div class="d-none d-sm-block mb-5 pb-4">
+      <!-- <div class="d-none d-sm-block mb-5 pb-4">
         <div id="map" style="height: 480px;"></div>
         <script>
           function initMap() {
-            var uluru = {lat: -25.363, lng: 131.044};
+            var uluru = {lat: 37.196199, lng: -3.624174};
             var grayStyles = [
               {
                 featureType: "all",
@@ -91,7 +148,7 @@
               {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
             ];
             var map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat: -31.197, lng: 150.744},
+              center: {lat: 37.196199, lng: -3.624174},
               zoom: 9,
               styles: grayStyles,
               scrollwheel:  false
@@ -99,41 +156,43 @@
           }
 
         </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdzPcfMAP2KPK9YZ20nUyXgQTOWGBWNpE&callback=initMap"></script>
 
-      </div>
+      </div> -->
+
+      <div style="width: 100%"><iframe width="100%" height="480" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Periodista%20Daniel%20G%C3%B3mez%20Saucedo%20S%2FN+(Laplaza)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create route map</a></iframe></div><br />
 
 
       <div class="row">
         <div class="col-12">
-          <h2 class="contact-title">Get in Touch</h2>
+          <h2 class="contact-title">Ponte en contacto</h2>
         </div>
         <div class="col-lg-8">
           <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
-                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder="Enter Message"></textarea>
+                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder="Tu mensaje"></textarea>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name">
+                  <input class="form-control" name="name" id="name" type="text" placeholder="Nombre">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email" placeholder="Enter email address">
+                  <input class="form-control" name="email" id="email" type="email" placeholder="Email">
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-group">
-                  <input class="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject">
+                  <input class="form-control" name="subject" id="subject" type="text" placeholder="Asunto">
                 </div>
               </div>
             </div>
             <div class="form-group mt-3">
-              <button type="submit" class="button button-contactForm">Send Message</button>
+              <button type="submit" class="button button-contactForm">Enviar mensaje</button>
             </div>
           </form>
 
@@ -144,22 +203,22 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
             <div class="media-body">
-              <h3>Buttonwood, California.</h3>
-              <p>Rosemead, CA 91770</p>
+              <h3>Granada, España.</h3>
+              <p>Periodista Daniel Gómez Saucedo S/N, 18014</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
             <div class="media-body">
-              <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-              <p>Mon to Fri 9am to 6pm</p>
+              <h3><a href="tel:454545654">958000000</a></h3>
+              <p>Lunes a Viernes de 9:00 a 16:00</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-email"></i></span>
             <div class="media-body">
-              <h3><a href="mailto:support@colorlib.com">support@colorlib.com</a></h3>
-              <p>Send us your query anytime!</p>
+              <h3><a href="mailto:contacto@laplaza.com">contacto@laplaza.com</a></h3>
+              <p>¡Contacta con nosotros cuando quieras!</p>
             </div>
           </div>
         </div>
@@ -251,8 +310,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
-                    <h2>Thank you</h2>
-                    <p>Your message is successfully sent...</p>
+                    <h2>Gracias</h2>
+                    <p>Tu mensaje se ha enviado correctamente...</p>
                 </div>
             </div>
         </div>
@@ -267,8 +326,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
-                    <h2>Sorry !</h2>
-                    <p> Something went wrong </p>
+                    <h2>Oh no!</h2>
+                    <p> Algo ha ido mal... </p>
                 </div>
             </div>
         </div>
