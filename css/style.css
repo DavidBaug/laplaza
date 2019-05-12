@@ -1170,8 +1170,9 @@ ul {
       color: #f84b67; }
 .single-post-area .blog-author {
   padding: 40px 30px;
-  background: #fbf9ff;
-  margin-top: 50px; }
+  margin-top: 50px;
+  color: black;
+  }
   @media (max-width: 600px) {
     .single-post-area .blog-author {
       padding: 20px 8px; } }
@@ -3710,4 +3711,38 @@ button:hover {
   padding: 0.5rem;
   border-radius: 0;
   cursor: pointer;
+}
+ .titulillo{
+    text-align: -webkit-center;
+    padding-bottom: 15px;
+}
+
+.blog_details p{
+
+color: black;
+}
+
+
+.par{
+    color: black;
+    display: flex;
+    font-size: medium;
+}
+
+.par p:first-of-type{
+    font-weight: 500;
+}
+
+.par p:not(:first-of-type){
+    margin-left: 10px;
+}
+
+aside .mapouter{
+    height: auto;
+    width: auto;
+}
+
+aside .gmap_canvas{
+    width: auto;
+    height: auto;
 }
