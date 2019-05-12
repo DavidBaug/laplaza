@@ -3746,3 +3746,14 @@ aside .gmap_canvas{
     width: auto;
     height: auto;
 }
+
+
+.asistencia{
+    display: grid;
+}
+
+.asistencia p{
+    font-size: medium;
+}
+
+.asistencia button{background: #f84b67;color: white;}
