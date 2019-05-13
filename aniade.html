@@ -19,7 +19,7 @@
 <body>
 
   <!--================Header Menu Area =================-->
-  <header class="header_area">
+  <header class="header_area navbar_fixed">
       <div class="main_menu">
           <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container">
@@ -34,14 +34,14 @@
                   <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                       <ul class="nav navbar-nav menu_nav ml-auto">
                           <li class="nav-item"><a class="nav-link" href="index.html">Descubre</a></li>
-                          <li class="nav-item"><a class="nav-link" href="index.html">Mi agenda</a></li>
+                          <li class="nav-item"><a class="nav-link" href="miagenda.html">Mi agenda</a></li>
                           <li class="nav-item"><a class="nav-link" href="index.html">Añadir evento</a></li>
-                          <li class="nav-item"><a class="nav-link" href="contact2.html">Contacto</a></li>
+                          <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
                           <li>
                             <div class="searchContainer">
                               <i class="fa fa-search searchIcon"></i>
-                              <input class="searchBox" type="search" name="search" placeholder="Buscar...">
-                              <input type="submit" value="Buscar" class="searchButton">
+                              <input class="searchBox" type="search" name="search" placeholder="Search...">
+                              <input type="submit" value="Search" class="searchButton">
                             </div>
                           </li>
                           <li class="nav-item submenu dropdown" style="margin-left:45px;">
@@ -61,124 +61,38 @@
   <!--================Header Menu Area =================-->
 
 
+    <!--================Blog Area =================-->
 
-    <!--================Hero Banner Area Start =================-->
-    <section class="hero-banner d-flex align-items-center">
-        <div class="container text-center">
-            <h2>Contacto</h2>
-            <nav aria-label="breadcrumb" class="banner-breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Descubre</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contacto</li>
-                </ol>
-            </nav>
-        </div>
-    </section>
-    <!--================Hero Banner Area End =================-->
+<section id="principal" class="seccion_principal">
 
+  <h2 class="titulo">Añadir evento</h2>
 
-  <!-- ================ contact section start ================= -->
-  <section style="    padding: 20px 0;"class="contact-section area-padding">
-    <div class="container">
-      <!-- <div class="d-none d-sm-block mb-5 pb-4">
-        <div id="map" style="height: 480px;"></div>
-        <script>
-          function initMap() {
-            var uluru = {lat: 37.196199, lng: -3.624174};
-            var grayStyles = [
-              {
-                featureType: "all",
-                stylers: [
-                  { saturation: -90 },
-                  { lightness: 50 }
-                ]
-              },
-              {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
-            ];
-            var map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat: 37.196199, lng: -3.624174},
-              zoom: 9,
-              styles: grayStyles,
-              scrollwheel:  false
-            });
-          }
+  <form id="evento" class="" action="index.html" method="post">
 
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdzPcfMAP2KPK9YZ20nUyXgQTOWGBWNpE&callback=initMap"></script>
+    <input type="text" name="" value="" placeholder="Título" required>
 
-      </div> -->
+    <input type="text" name="" value="" placeholder="Subtítulo">
 
-      <div style="color: black;font-size=27px;" class="titulillo">
-      <h3 class="contact-title">Localización</h3>
-      </div>
+    <textarea name="name" rows="15" cols="80" placeholder="Descripción"></textarea>
+
+    <input type="number" name="" value="" placeholder="Precio">
+
+    <input type="date" name="" value="" placeholder="Fecha">
+
+    <input type="datetime" name="" value="" placeholder="Hora">
+
+    <input class="mapa" type="text" name="" value="" placeholder="Localización">
+
+    <button class="botonsillo" type="button" name="button">Añadir imagen</button>
+
+  </form>
+
+  <br>
+
+</section>
 
 
-      <div style="width: 100%"><iframe width="100%" height="480" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Periodista%20Daniel%20G%C3%B3mez%20Saucedo%20S%2FN+(Laplaza)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create route map</a></iframe></div><br />
-
-
-      <div class="row">
-        <div class="col-12">
-          <h2 style="    padding-left: 10px;" class="contact-title">Ponte en contacto</h2>
-        </div>
-        <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-            <div class="row">
-              <div class="col-12">
-                <div class="form-group">
-                    <textarea style="width: 95% !important" class="form-control" name="message" id="message" cols="30" rows="9" placeholder="Tu mensaje"></textarea>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" placeholder="Nombre">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email" placeholder="Email">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <input style="    width: 95% !important;"class="form-control" name="subject" id="subject" type="text" placeholder="Asunto">
-                </div>
-              </div>
-            </div>
-            <div class="form-group mt-3" style="margin-left: 25px;">
-              <button type="submit" class="button button-contactForm">Enviar mensaje</button>
-            </div>
-          </form>
-
-
-        </div>
-
-        <div class="col-lg-4">
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-home"></i></span>
-            <div class="media-body">
-              <h3>Granada, España.</h3>
-              <p>Periodista Daniel Gómez Saucedo S/N, 18014</p>
-            </div>
-          </div>
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-            <div class="media-body">
-              <h3><a href="tel:454545654">958000000</a></h3>
-              <p>Lunes a Viernes de 9:00 a 16:00</p>
-            </div>
-          </div>
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-email"></i></span>
-            <div class="media-body">
-              <h3><a href="mailto:contacto@laplaza.com">contacto@laplaza.com</a></h3>
-              <p>¡Contacta con nosotros cuando quieras!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ================ contact section end ================= -->
+<!--================Blog Area end =================-->
 
  <!-- ================ start footer Area ================= -->
     <footer class="footer-area">
@@ -219,8 +133,7 @@
                     <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open</p>
 
                     <div class="form-wrap" id="mc_embed_signup">
-                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                        method="get">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" novalidate="true">
                         <div class="input-group">
                             <input type="email" class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '">
                             <div class="input-group-append">
@@ -241,7 +154,7 @@
         </div>
         <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
             <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright ©<script>document.write(new Date().getFullYear());</script>2019 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
                 <a href="#"><i class="ti-facebook"></i></a>
@@ -255,37 +168,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- ================ End footer Area ================= -->
 
 
-<!--================Contact Success and Error message Area =================-->
-    <div id="success" class="modal modal-message fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <h2>Gracias</h2>
-                    <p>Tu mensaje se ha enviado correctamente...</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modals error -->
-
-    <div id="error" class="modal modal-message fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <h2>Oh no!</h2>
-                    <p> Algo ha ido mal... </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--================End Contact Success and Error message Area =================-->
 
 
 
@@ -304,5 +186,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/mail-script.js"></script>
 <script src="js/theme.js"></script>
+
+
 </body>
 </html>
