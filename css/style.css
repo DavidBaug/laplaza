@@ -3956,9 +3956,33 @@ border-radius: 5px;
     font-size: 15px;
 }
 
-.eventos_asistire{}
+.eventos_asistire{
+    display: grid;
+}
 
-.eventos_asistire p{}
+.eventos_asistire p{
+    color: #254a65;
+    font-weight: 600;
+    font-size: 20px;
+}
 
 
-.eventos_asistire a{}
+.eventos_asistire a{
+    font-size: 15px;
+}
+
+
+.mi_tablon{}
+
+.mi_tablon .titulo{
+    color: #254a65;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.mi_tablon p{
+    color: black;
+    font-size: 15px;
+}
+
+.mi_tablon .comment-list{}
