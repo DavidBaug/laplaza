@@ -3923,3 +3923,42 @@ border-radius: 5px;
 }
 
 #evento button.botonsillo{width: fit-content;padding: 12px 20px;margin: 8px 26px;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;font-size: 16px;background: #f84b67;color: white;}
+
+.foto_perfil{
+    text-align: center;
+    margin: 0%;
+    height: auto;
+}
+
+.foto_perfil p{
+    color: #254a65;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.foto_perfil img{
+    width: 160px;
+    height: auto;
+    margin: 1%;
+}
+
+.descripcion{
+    color: black;
+}
+
+.descripcion p:first-child{
+    color: #254a65;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.descripcion p:not(:first-child){
+    font-size: 15px;
+}
+
+.eventos_asistire{}
+
+.eventos_asistire p{}
+
+
+.eventos_asistire a{}
