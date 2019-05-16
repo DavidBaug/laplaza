@@ -3926,14 +3926,17 @@ border-radius: 5px;
 
 .foto_perfil{
     text-align: center;
-    margin: 0%;
+    margin: 0% 0% 10%;
     height: auto;
+    width: auto;
+    padding: 0%;
 }
 
 .foto_perfil p{
     color: #254a65;
     font-size: 20px;
     font-weight: 600;
+    padding-bottom: 0%;
 }
 
 .foto_perfil img{
@@ -3978,6 +3981,8 @@ border-radius: 5px;
     color: #254a65;
     font-weight: 600;
     font-size: 20px;
+    margin: 0;
+    margin-bottom: 1.5pc;
 }
 
 .mi_tablon p{
@@ -3986,3 +3991,102 @@ border-radius: 5px;
 }
 
 .mi_tablon .comment-list{}
+
+
+.perfil{
+    display: inline-flex;
+}
+
+.perfil .izquierda{
+    width: 45%;
+}
+
+.perfil .derecha{
+    width: 100%;
+}
+
+.eventos_asistire ul li:last-child a{
+    color: #f84b67;
+    font-weight: 600;
+    float: left;
+    margin-top: 1%;
+}
+
+.grupos{
+    margin: 5% 10% 10%;
+}
+
+.grupos .imgs{
+    display: flex;
+}
+
+.grupos li{
+    margin-right: 5%;
+}
+
+.grupos p{
+    color: #254a65;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 0%;
+}
+
+.grupos li a{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #f84b67;
+    display: table-caption;
+    padding: 13px;
+}
+
+.grupos li img{
+    width: 70px;
+    height: 70px;
+    border: solid 2px #254a65;
+    border-radius: 100px;
+    padding: 10%;
+}
+
+.aficiones{
+    margin: 5% 10% 10%;
+}
+
+.aficiones .titulo{
+    color: #254a65;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 0%;
+    margin-left: 0;
+}
+
+.aficiones ul{
+    /* color: black; */
+    /* font-size: 16px; */
+    /* font-weight: 500; */
+    /* padding-bottom: 0%; */
+    /* margin-left: 5%; */
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.aficiones ul li{
+    display: inline-block;
+}
+
+.aficiones ul li a{
+    font-size: 15px;
+    display: inline-block;
+    border: 2px solid #eeeeee;
+    background: #fff;
+    padding: 4px 20px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    transition: all 0.3s ease 0s;
+    color: #444;
+    /* font-size: 13px; */
+    font-weight: 500;
+}
+
+.comment-form .titulo{}
