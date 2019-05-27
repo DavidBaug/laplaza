@@ -2,7 +2,11 @@
 
 Aplicación destinada a la gestión de eventos culturales de la universidad con formato de red social
 
-[Demo](https://davidbaug.github.io/laplaza/)
+Test A: [laplaza](https://davidbaug.github.io/laplaza/)
+
+Test B: [Agenda UGR](https://github.com/adritec96/diu2019)
+
+
 
 ### Evaluación: Test A/B
 
@@ -60,6 +64,8 @@ Aplicación destinada a la gestión de eventos culturales de la universidad con 
 
 ![](./evaluacion/cuestionario.PNG)
 
+
+
 #### **Informe**
 
 Al analizar la web podemos ver que presenta una estructura clara y sencilla, tampoco es muy amplia pues podemos encontrar todo el contenido dividido en 4 elementos, cada cual con una función específica. Una vez accedemos a la aplicación web entramos directamente a la página principal donde se nos muestra una serie de eventos y sus datos más importantes, desde esta sección podemos acceder a cada evento para ver la información detallada.
@@ -84,6 +90,8 @@ Al tener una cabecera estática se fuerza al usuario a volver a la parte superio
 
 En el footer no aparece ninguna información relevante.
 
-No aparece ningún evento destacado que pueda ser de interés para el usuario.
+No aparece ningún evento destacado que pueda ser de interés para el usuario, la lista de eventos que se presenta está ordenada cronológicamente.
 
 La página no dispone de un buscador fácilmente accesible para búsquedas rápidas (qué podría haberse incluído en la cabecera).
+
+Usabilidad: no se puede acceder a los eventos clickando en su imagen o título, hay que hacerlo siguiendo el enlace específico “Ver más”.
